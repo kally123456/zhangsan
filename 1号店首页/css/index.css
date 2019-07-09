@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+body {
+	font: 12px/100% "微软雅黑";
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+}
+
+a:hover {
+	color: red!important;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+li {
+	list-style: none;
+}
+
+.w {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix::after,
+.clearfix::before {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+
+/*头部样式开始*/
+
+#box .top {
+	height: 36px;
+	background-color: #f9f9f9;
+}
+
+#box .top .header {
+	height: 36px;
+	/*background-color: pink;*/
+}
+
+#box .top .header .header-l {
+	line-height: 36px;
+}
+
+#box .top .header .header-l .login,
+#box .top .header .header-l .register {
+	color: #0066cc;
+}
+
+#box .top .header .header-r {
+	line-height: 36px;
+}
+
+#box .top .header .header-r .fake-el a {
+	display: inline-block;
+	position: relative;
+	padding-right: 14px;
+}
+
+#box .top .header .header-r .fake-el a::after {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 10px;
+	background: url(../images/indexhead_sprite.png) -288px -261px no-repeat;
+	position: absolute;
+	top: 13px;
+	right: 0;
+}
+
+#box .top .header .header-r li {
+	float: left;
+}
+
+#box .top .header .header-r .line {
+	margin: 0 6px;
+	line-height: 32px;
+	color: #e1e1e1;
+}
+
+#box .top .header .header-r .fake-el.mobile a::before {
+	content: '';
+	display: block;
+	width: 10px;
+	height: 16px;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	background: url(../images/indexhead_sprite.png) -288px -230px no-repeat;
+}
+
+#box .top .header .header-r .fake-el.mobile a {
+	padding-left: 15px;
+}
+
+
+/*头部样式结束*/
